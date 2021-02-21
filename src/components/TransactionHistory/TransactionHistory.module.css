@@ -1,0 +1,22 @@
+/* «Схлопываем» рамки соседних ячеек */
+.transactionHistory {
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: lightskyblue;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: lightgray;
+}
+
+/* 
+  Добавляем ячейкам рамку и padding, расстояние от контента до рамки.
+  Для управления положением по вертикали, используется свойство caption-side.
+*/
+th,
+td {
+  padding: 10px;
+  border: 1px solid hsl(0, 2%, 75%);
+}
